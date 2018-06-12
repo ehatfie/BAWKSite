@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 
 class Pane extends Component{
     render() {
@@ -11,8 +12,8 @@ class Pane extends Component{
 }
 
 Pane.propTypes = {
-    label: React.propTypes.string.isRequired,
-    children: React.PropTypes.element.isRequired
+    label: PropTypes.string.isRequired,
+    children: PropTypes.element.isRequired
 }
 
 export default Pane
