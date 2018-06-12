@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+
 class Tabs extends Component {
+
+    constructor(props){
+        super(props)
+        this.state = this.getInitialState()
+    }
     getDefaultProps(){
         return {
             selected: 0
@@ -51,7 +57,7 @@ class Tabs extends Component {
 
     render() {
         return (
-            <div className = "tabs">
+            <div className = "Tabs">
             {this._renderTitles()}
             {this._renderContent()}
             </div>
@@ -64,7 +70,7 @@ Tabs.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.array,
         PropTypes.element
-    ]).isRequired
+    ]).isRequired,
 }
 
 export default Tabs

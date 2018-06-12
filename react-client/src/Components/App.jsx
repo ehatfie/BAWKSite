@@ -13,9 +13,9 @@ class App extends Component {
     render() {
         return (
             <div>
-               <Tabs selected = {0}>
+               <Tabs selected = {1}>
                     <Pane label = "Tab 1">
-                        <div>This is tab 1 contents</div>
+                        <div> This is tab 1 contents</div>
                     </Pane> 
                     <Pane label = "Tab 2">
                         <div> this is tab 2 stuff</div>

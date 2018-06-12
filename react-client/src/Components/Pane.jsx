@@ -13,7 +13,7 @@ class Pane extends Component{
 
 Pane.propTypes = {
     label: PropTypes.string.isRequired,
-    children: PropTypes.element.isRequired
+    children: PropTypes.element.isRequired,
 }
 
 export default Pane
