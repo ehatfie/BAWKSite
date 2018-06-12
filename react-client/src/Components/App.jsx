@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage'
 import House from './Pages/House'
 import NavBar from './HeaderComponent/NavBar'
 import Footer from './FooterComponent/Footer'
+import Layout from './Layout'
 
 class App extends Component {
     render() {
@@ -14,10 +15,29 @@ class App extends Component {
                     <NavBar />
                     <Route name = "home" exact path="/" component = { HomePage } />
                     <Route name = "house" exact path="/house" component = { House } />                
-                </div>
+                    </div>
             </Router>
         )
     }
 }
 
 export default App
+
+/*
+<Router>
+                <div>
+                    <Footer />
+                    <Route name = "home" exact path="/" component = { HomePage } />
+                </div>
+            </Router>
+
+            return (
+            <Router>
+                <div>
+                    <NavBar />
+                    <Route name = "home" exact path="/" component = { HomePage } />
+                    <Route name = "house" exact path="/house" component = { House } />                
+                    </div>
+            </Router>
+        )
+*/
