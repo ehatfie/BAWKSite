@@ -66,9 +66,4 @@ function _renderTitles(){
     )
 }
 
-
-
-
-
-
-
+export default Tabs
